@@ -103,6 +103,7 @@ function Main() {
     }
   };
   useEffect(() => {
+    console.log("test");
     const email1 = sessionStorage.getItem("user");
     if (email1 !== null) {
       axios
