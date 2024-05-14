@@ -106,7 +106,7 @@ function Main() {
     const email1 = sessionStorage.getItem("user");
     if (email1 !== null) {
       axios
-        .post("http://127.0.0.1:5000/getCategory", {
+        .post("https://notesappback-zh4f.onrender.com/getCategory", {
           email: email1,
         })
         .then((response) => {
@@ -115,7 +115,7 @@ function Main() {
         .catch((error) => SetCategoriesList([]));
 
       axios
-        .post("http://127.0.0.1:5000/getNotes", {
+        .post("https://notesappback-zh4f.onrender.com/getNotes", {
           email: email1,
         })
         .then((response) => {

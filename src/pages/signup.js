@@ -13,7 +13,7 @@ function Register() {
     const last_name = formData.get("last_name");
 
     axios
-      .post("http://127.0.0.1:5000/signUp", {
+      .post("https://notesappback-zh4f.onrender.com/signUp", {
         email: email,
         password: password,
         first_name: first_name,
