@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Login.css";
 import axios from "axios";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 function Register() {
   const navigate = useNavigate();
   const handleSubmit = (e) => {
@@ -78,9 +78,6 @@ function Register() {
           Sign up
         </button>
       </form>
-      <Link className="links" to="/">
-        Main
-      </Link>
     </div>
   );
 }
