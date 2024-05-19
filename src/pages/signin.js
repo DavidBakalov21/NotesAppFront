@@ -11,7 +11,7 @@ function Login() {
     const password = formData.get("password");
 
     axios
-      .post("https://notesappback-zh4f.onrender.com/signIn", {
+      .post("https://notesappback-2cvc.onrender.com/signIn", {
         email: email,
         password: password,
       })

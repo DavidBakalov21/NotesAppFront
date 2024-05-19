@@ -15,7 +15,7 @@ function NoteCreator({ categories, triggerRefresh }) {
     const now = new Date();
     const readableDate = now.toLocaleString();
     axios
-      .post("https://notesappback-zh4f.onrender.com/CreateNote", {
+      .post("https://notesappback-2cvc.onrender.com/CreateNote", {
         email: email1,
         category: { color: categoryObj.color, name: categoryObj.name },
         note: note,

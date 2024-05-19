@@ -107,7 +107,7 @@ function Main() {
     const email1 = sessionStorage.getItem("user");
     if (email1 !== null) {
       axios
-        .post("https://notesappback-zh4f.onrender.com/getCategory", {
+        .post("https://notesappback-2cvc.onrender.com/getCategory", {
           email: email1,
         })
         .then((response) => {
@@ -116,7 +116,7 @@ function Main() {
         .catch((error) => SetCategoriesList([]));
 
       axios
-        .post("https://notesappback-zh4f.onrender.com/getNotes", {
+        .post("https://notesappback-2cvc.onrender.com/getNotes", {
           email: email1,
         })
         .then((response) => {

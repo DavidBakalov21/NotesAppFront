@@ -14,7 +14,7 @@ function CreateCategory() {
     const color = formData.get("color");
 
     axios
-      .post("https://notesappback-zh4f.onrender.com/createCategory", {
+      .post("https://notesappback-2cvc.onrender.com/createCategory", {
         email: email1,
         color: color,
         name: name,

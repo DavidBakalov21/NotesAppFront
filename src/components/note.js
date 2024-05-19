@@ -6,7 +6,7 @@ function Note({ item, triggerRefresh, categories }) {
   const [isChecked, setIsChecked] = useState(false);
   const handleDelete = () => {
     axios
-      .delete("https://notesappback-zh4f.onrender.com/deleteNote", {
+      .delete("https://notesappback-2cvc.onrender.com/deleteNote", {
         data: {
           email: item.email,
           note: item.text,
@@ -42,7 +42,7 @@ function Note({ item, triggerRefresh, categories }) {
       status = "active";
     }
     axios
-      .patch("https://notesappback-zh4f.onrender.com/UpdateNote", {
+      .patch("https://notesappback-2cvc.onrender.com/UpdateNote", {
         data: {
           emailEdit: item.email,
           noteEdit: note,

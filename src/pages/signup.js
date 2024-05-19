@@ -13,7 +13,7 @@ function Register() {
     const last_name = formData.get("last_name");
 
     axios
-      .post("https://notesappback-zh4f.onrender.com/signUp", {
+      .post("https://notesappback-2cvc.onrender.com/signUp", {
         email: email,
         password: password,
         first_name: first_name,
